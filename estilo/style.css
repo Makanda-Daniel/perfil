@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --AP:#2563EB;
+    --AS:#0F172A;
+    --B:#F1F5F9;
+    --C:#1E293B;
+    --R:#7C3AED;
+    --RS:#4C1D95;
+    --RO:#EC4899;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em; 
+    background-color: rgb(10, 10, 10);  
+    color: white;
+}
+
+header {
+    
+    
+}
+
+ header > div#menufixo {
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    color: #F1F5F9;
+    background-color: rgb(10, 10, 10); 
+}
+
+ header > div#menufixo > span {text-transform: capitalize;cursor: pointer;}
+
+ header > div#menufixo > span#menubt {
+    float: right;
+    color: var(--RS);
+}
+
+nav#menu {
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+ header > div#menufixo  > nav > ul > li {
+    text-transform: capitalize;
+    cursor: pointer;
+    padding: 10px;
+}
+a {
+    text-decoration: none;
+    color: var(--RS);
+}
+
+li:hover {
+    border-bottom: 1px solid; 
+}
+
+main {margin: 0 auto; width: 90vw; flex: 1;
+    
+
+
+
+}
+
+ div#ft {
+    margin: 0 auto;
+    width: 250px;
+    height: 300px;
+    background: url("../img/me.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: drop-shadow(0px 4px 20px gray);
+}
+ div#aprese {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 15px;  
+   
+
+}
+span#Denny {
+    font-size: 1.5em;
+}
+span#dev{
+    color: var(--RS);
+    font-size: 1em;
+}
+ div#btservicos {
+    text-align: center;
+
+}
+ div#btservicos > a > button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    background-color: var(--R);
+    border: 1px solid black;
+    margin: 5px;
+    border-radius: 7px;
+}
+ div#btservicos > a > button:hover {
+    background-color: var(--B);
+    color: #7C3AED;
+    transition: 90ms;
+    
+   
+ }
+ 
+
+
+
+main > div#sobrem {
+    text-align: center;
+    color:gray;
+}
+
+h2 {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+main > div#sobrem >p{
+    margin-bottom: 20px;
+
+
+}
+
+span#tech {
+    color: var(--RS);
+}
+
+
+footer {
+    background-color: rgb(10, 10, 10); 
+}
+footer  > div{
+    padding: 10px;
+    text-align: center;
+} 
+
+@media (min-width:768px) {
+    div#menufixo {
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    span#menubt {
+        display: none;
+    }
+    nav#menu {
+        display: flex;  
+    }
+
+    ul {
+        display: flex;
+         flex-flow: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    main > article {
+        display: grid;
+        grid-template:repeat(1,1fr)/ repeat(2,auto);
+        align-items: center;
+        gap: 5px;
+
+    } 
+
+    main > article > div {
+       
+    }
+    main > article > div#aprese{
+       
+        font-size: 2.4em;
+    }
+
+    div#btservicos {
+        display: block;
+
+    }
+
+}
+
+
