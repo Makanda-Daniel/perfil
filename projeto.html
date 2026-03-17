@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/54fc0ed631.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Makanda Daniel</title>
+    <style>
+        main.corpoP {
+            margin-top: 100px;
+            width: 100%;
+           
+        }
+        main  > div > h1{text-align: center; margin-bottom: 20px;}
+        section#Container {
+
+            margin: 0 auto;
+            width: 85vw;
+            padding: 10px;
+            text-align:center ;
+        }
+         article#projetos {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            
+            
+            
+ 
+        }
+        div#item {
+            width: 100%;
+            background-color:#4C1D95;
+            padding: 10px;
+            margin-bottom: 40px;
+            
+            
+        }
+
+        article#projetos > p {
+            padding: 5px;
+        }
+
+        p.txt {
+            color: gray;
+        }
+         div.fta {
+            background: url(img/hospital.png)no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 100%;
+            height: 160px;
+            text-align: center;
+        }
+        div#ftF{
+            background: url(img/farmaon.png)no-repeat;
+            background-position: center;
+            background-size: contain;
+
+        }
+
+        div#ftP{
+            background: url(img/inforschool.png)no-repeat;
+            background-position: center;
+            background-size: contain;
+
+        }
+            div#bt {
+            text-align: center;
+            
+           
+        }
+         button.ver {
+            width: 85%;
+            height: 48px;
+            cursor: pointer;
+            font-size: 1.1em;
+            background-color: #7C3AED;
+            border: 1px solid #7C3AED;
+            margin: 7px;
+            color: white;
+        }
+        button.ver:hover {
+            background-color: white;
+            color: #7C3AED;
+        }
+
+        section#contacto {
+            background-color: #4C1D95;
+            height: 300px;
+
+        }
+        main >section#contacto>article {
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            z-index: 1;
+        }
+         main >section#contacto  >article>div>a>button {
+            width: 150px;
+            height: 80px;
+            cursor: pointer;
+            font-size: 1.1em;
+            background-color: #4C1D95;
+            text-align: center;
+            color: white;
+            border: 1px solid white;
+        }
+
+         main >section#contacto  >article>div>a>button:hover {
+            background-color: white;
+            color: #4C1D95;
+         }
+
+         @media (min-width:768px){
+
+            article#projetos {
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-between;
+            
+            
+            
+ 
+        }
+        div#item {
+            width: 30%;
+            background-color:#4C1D95;
+            padding: 10px;
+            margin: 10px;
+            
+            
+        }
+
+
+
+
+
+            
+        }
+            
+     
+
+    </style>
+</head>
+<body>
+    <header class="capro">
+        <div id="menufixo">
+            <span>makanda daniel</span>
+            <span id="menubt"><i class="fa-solid fa-bars fa-xl" style="color: #4c1d95;"></i></span>
+            <nav id="menu">
+                <ul>
+                    <li><a href="index.html">inicio</a></li>
+                    <li><a href="projeto.html">projetos</a></li>
+                    <li><a href="contacto.html">contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+
+    <main class="corpoP">
+        <div>
+            <h1>Meus Projetos</h1>
+        </div>
+        <section id="Container">
+            <article id="projetos">
+                <div id="item" data-aos="fade-up">
+                    <div  class="fta"></div>
+                    <p>
+                        <h3>Hospital Vida Plena</h3>
+                        <p class="txt">
+                            É sistema web que facilita o acesso a saúde, permitindo marcar consulta
+                        </p>
+                    </p>
+                    <div id="bt">
+                         <a href="https://Makanda-daniel.github.io/Hospital" target="_blank"><button class="ver" type="submit">ver o projeto</button></a> 
+                         
+                   </div>
+                </div>    
+         
+
+             
+
+
+            
+             
+                <div id="item" data-aos="fade-up">
+                    <div id="ftF"  class="fta"></div>
+                    <p>
+                        <h3>FarmaOn</h3>
+                        <p class="txt">
+                            FarmaOn permite a localização das farmácias mais próximas
+                        </p>
+                    </p>
+                    <div id="bt">
+                         <a href=" https://makanda-daniel.github.io/farma/" target="_blank"><button class="ver" type="submit">ver o prjeto</button></a>
+                         
+                   </div>
+                </div>
+           
+
+           
+                <div id="item" data-aos="fade-up">
+                    <div id="ftP"  class="fta"></div>
+                    <p>
+                        <h3>InforSchool</h3>
+                        <p class="txt">
+                            Website que facilita o acesso as pautas, notificações e matéria.
+                        </p>
+                    </p>
+                    <div id="bt">
+                         <a href=" https://makanda-daniel.github.io/escola/" target="_blank"><button class="ver" type="submit">ver o prjeto</button></a>
+                         
+                   </div>
+                </div>
+            </article> 
+            
+        </section>
+      
+
+
+        <section id="contacto">
+            <article>
+                <div>
+                    <h2>Vamos construír algo juntos</h2>
+                    <a href="contacto.html">
+                        <button>contacta-me</button>
+                    </a>
+                </div>
+            </article>
+        </section>
+
+
+
+         
+    </main>
+    
+
+
+
+    <footer>
+        <div>Desenvolvedor Front End - Makanda Daniel</div> 
+    </footer>
+    <script src="javascript/Jscript.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+          AOS.init();
+    </script>
+</body>
+</html>
